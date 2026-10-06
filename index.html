@@ -774,5 +774,19 @@
     Meta Pixel PageView is already installed in the <head>.
   -->
 
+<!-- TELEGRAM TRACKING - RAXI WIN -->
+<script>
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('a');
+  if (link && link.href && link.href.includes('t.me')) {
+    fbq('track', 'Lead');
+    fbq('track', 'Subscribe');
+  }
+});
+</script>
+
+</body>
+</html>
+
 </body>
 </html>
